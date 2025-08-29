@@ -53,7 +53,9 @@ Importante: Remover "type": "module" do package.json para usar CommonJS.
  Rodar direto sem compilar:
  npx ts-node src/main.ts
 
-4.Funcionalidades do Player:
+## Complementos
+
+1.Funcionalidades do Player:
  Play/Pause/Stop de vídeos
  Next/Previous para navegar na playlist
  Loop: repete a playlist continuamente
@@ -61,7 +63,7 @@ Importante: Remover "type": "module" do package.json para usar CommonJS.
  Histórico: registro dos vídeos já assistidos
  Suporte a diferentes tipos de vídeo: Video, AdVideo e LiveStream
 
-5. APLICAÇÃO DOS 4 PILARES
+2. APLICAÇÃO DOS 4 PILARES
   1. Abstração
   Video, Playlist e Player são abstrações claras.
   Interfaces Playable e Describable definem o que cada classe deve implementar (play/pause/stop e info()).
@@ -81,7 +83,7 @@ Importante: Remover "type": "module" do package.json para usar CommonJS.
  LiveStream.play() exibe “Ao vivo” e número de espectadores.
  Permite que o Player trate um array de Video de forma uniforme, chamando play() e info() sem saber o tipo exato.
 
-6. Simulação
+3. Simulação
    Cria vídeos normais, anúncios e live streams.
    Cria uma playlist e adiciona vídeos.
    Cria o player, ativa shuffle e loop, navega e imprime informações.
